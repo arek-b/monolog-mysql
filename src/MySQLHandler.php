@@ -55,7 +55,7 @@ class MySQLHandler extends AbstractProcessingHandler
     public function __construct($db, $table = NULL, $level = Logger::DEBUG, $bubble = true)
     {
         parent::__construct($level, $bubble);
-        $this->table = $table;
+        $table!==NULL && $this->table = $table;
         $this->setHandler($db);
     }
 
