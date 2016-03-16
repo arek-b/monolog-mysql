@@ -4,8 +4,7 @@
     "type": "package",
     "description": "Mysql handler for monolog",
     "require": {
-        "monolog/monolog": "^1.18",
-        "doctrine/dbal": "v2.5.4"
+        "monolog/monolog": "^1.18"
     },
     "autoload": {
         "psr-4": {
