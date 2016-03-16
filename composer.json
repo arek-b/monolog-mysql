@@ -1,0 +1,15 @@
+{
+    "name": "bhavik/monolog-mysql",
+    "license": "BSD-3-Clause",
+    "type": "package",
+    "description": "Mysql handler for monolog",
+    "require": {
+        "monolog/monolog": "^1.18",
+        "doctrine/dbal": "v2.5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "MonologHandler\\": "src"
+        }
+    }
+}
