@@ -1,14 +1,14 @@
 #  MySQL Handler For Monolog
 Monolog handler to log in mysql ldatabase
 
-#####How to install
+##### How to install
 Use below code to install via composer
 
 ```
 composer require bhavik/monolog-mysql
 ```
 
-#####How to use
+##### How to use
 
 First create monolog logger instance as you always do
 ```
@@ -31,5 +31,5 @@ Now push handler with the help of logger instance.
 $log->pushHandler($handler);
 ```
 
-#####Last Point
+##### Last Point
 Use Logger as you always do.
