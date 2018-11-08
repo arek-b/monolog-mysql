@@ -56,7 +56,8 @@ class MySQLiHandler extends AbstractHandler
      */
     public function write($record)
     {
-        $this->statement->bind_param('ssss', $record['channel'], $record['level'], $record['message'], $record['datetime']->format('U'));
+        $datetime = $record['datetime']->format('U');
+        $this->statement->bind_param('ssss', $record['channel'], $record['level'], $record['message'], $datetime);
         $this->statement->execute();
     }
 
